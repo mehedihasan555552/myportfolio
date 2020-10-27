@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="{%static 'css/main.css'%}" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico'%}">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -85,14 +86,14 @@
                 <i class="fab fa-twitter"></i
               ></a>
             </li>
-            <div class="cta">
+            <!-- <div class="cta">
               <a
                 href="#"
                 target="_blank"
                 class="btn nav-link"
                 >Buy me a coffee</a
               >
-            </div>
+            </div> -->
           </ul>
         </nav>
       </div>
@@ -113,8 +114,8 @@
               </div>
               <div class="cta">
                 <a
-                  href="https://drive.google.com/file/d/1Kv3sGGnO1SSGubZ1DF232Zhod2oibMQL/view?usp=sharing"
-                  target="_blank"
+                  href="#about"
+                
                   class="btn"
                   >CV</a
                 >
@@ -160,9 +161,17 @@
 
 
             </p>
+
+           
           </div>
         </div>
         <hr />
+
+        <div class="about-text-box">
+          <h2 style='margin-left: 250px;'>My Resume</h2>
+          <embed src="{% static 'image/MehediResume.pdf'%}" width="800px" height="600px" />
+
+        </div>
       </section>
       <section id="services" class="services">
         <div class="container">
@@ -224,6 +233,32 @@
             </p>
           </div>
         </div>
+
+
+         <!-- MehediEco -->
+         <div class="project-item">
+          <div class="project-description has-margin-right">
+            <h1>MehediEco Ecomerce Web App</h1>
+            <p>
+              This is a <a href="http://mehedi-eco.herokuapp.com/" target="_blank">eComerce web App</a> with Paypal payment integration,
+               I developed for educational purpose. User can buy product without
+               creating account.
+
+              Users don't need to  register and login
+              for them to use the app. 
+               I developed this app using Html,CSS,JavaScript,Bootstarp,Pyhton,Django
+               Here is <a href="http://mehedi-eco.herokuapp.com/" target="_blank">Live Webisite</a>
+            </p>
+
+          </div>
+          <div class="project-img">
+            <img src="{%static 'image/MehediEco.png'%}" />
+          </div>
+        </div>
+
+
+
+
         <!-- First project -->
         <div class="project-item">
           <div class="project-img has-margin-right">
