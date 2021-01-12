@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 
 <!DOCTYPE html>
 <html>
@@ -11,6 +12,7 @@
     <title>Mehedi Hasan | Full stack Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="{%static 'css/main.css'%}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{%static 'css/slide.css'%}" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="shortcut icon" href="{% static 'image/favicon.ico'%}">
     <link
@@ -106,7 +108,7 @@
             <h1>Mehedi Hasan</h1>
             <h3>{Python Django Full-Stack Web Developer}</h3>
             <p>
-              HTML . CSS . JavaScript . Python . Django
+              HTML . CSS . JavaScript . Python . Django . Rest Framework . Reactjs
             </p>
             <div class="intro-btn">
               <div class="cta">
@@ -116,7 +118,7 @@
                 <a
                 href="https://drive.google.com/file/d/1srTES5NNwE9fDKlAfYwgVlmHyj6AJSmw/view?usp=sharing"
                 target="_blank"
-                
+
                   class="btn"
                   >CV</a
                 >
@@ -163,16 +165,16 @@
 
             </p>
 
-           
+
           </div>
         </div>
         <hr />
 
         <div class="about-text-box">
-          <h2 style='margin-left: 250px;'>My Resume</h2>
-         
-          <iframe  src="{% static 'image/cv.jpg'%}" width="800px" height="600px" frameborder="0"></iframe>
-          
+          <h2 style='margin-left: 300px;'>My Resume</h2>
+
+          <iframe  style='margin-left: 80px;' src="{% static 'image/cv.jpg'%}" width="800px" height="600px" frameborder="0"></iframe>
+
 
         </div>
       </section>
@@ -248,14 +250,14 @@
                creating account.
 
               Users don't need to  register and login
-              for them to use the app. 
+              for them to use the app.
                I developed this app using Html,CSS,JavaScript,Bootstarp,Pyhton,Django
                Here is <a href="http://mehedi-eco.herokuapp.com/" target="_blank">Live Webisite</a>
             </p>
 
           </div>
           <div class="project-img">
-            <img src="{%static 'image/MehediEco.png'%}" />
+            <img src="{%static 'image/Eco.gif'%}" />
           </div>
         </div>
 
@@ -265,7 +267,7 @@
         <!-- First project -->
         <div class="project-item">
           <div class="project-img has-margin-right">
-            <img src="{%static 'image/sppms.png'%}" />
+            <img src="{%static 'image/adminpanel.gif'%}" />
           </div>
           <div class="project-description">
             <h1>Seller Website Admin panel System</h1>
@@ -286,21 +288,20 @@
               This is a simple to-do app I developed for educational purpose.
 
               It allows the user to perform CRUD operations e.g adding and
-              removing tasks from the database. Users must register and login
-              for them to use the app. A user can only see the tasks that he/she
-              have added. I developed this app using Html,Css,Bootstarp,Pyhton,Django
+              removing tasks from the database. A user can  see the tasks that he/she
+              have added. I developed this app using django rest Framework, Reactjs
             </p>
 
           </div>
           <div class="project-img">
-            <img src="{%static 'image/to-do.png'%}" />
+            <img src="{%static 'image/todo.gif'%}" />
           </div>
         </div>
 
         <!-- Third service -->
         <div class="project-item">
           <div class="project-img has-margin-right">
-            <img src="{%static 'image/calculator.png'%}" />
+            <img src="{%static 'image/voting.gif'%}" />
           </div>
           <div class="project-description">
             <h1>Voting System</h1>
@@ -319,22 +320,80 @@
 
         <div class="project-item">
           <div class="project-description has-margin-right">
-            <h1>Ecomerce Website</h1>
+            <h1>Library Management System</h1>
             <p>
-              This is a Ecomerce Website.Admin has all
-              permision to do.User can buy product.
-              Seller can post Product Post.
+              Library Management System is developed in Django,Html,Css,JavaScript
+               which mainly focuses on basic operations in a library like adding new books,
+               and updating new information, searching books and members and return books.
+                Purpose: System is mainly to provide automati...
+                Admin: He can read or write the information ab...
+                Operator: He can open the account of member...
+                Scope: The application is wide and can be used
             </p>
 
           </div>
           <div class="project-img">
-            <img src="{%static 'image/ecomerce.png'%}" />
+            <img src="{%static 'image/library.gif'%}" />
           </div>
         </div>
 
 
+        <!-- Fifth service -->
+        <div class="project-item">
+          <div class="project-img has-margin-right">
+            <img src="{%static 'image/blog.gif'%}" />
+          </div>
+          <div class="project-description">
+            <h1>Bloging App</h1>
+            <p>
+              This is a Blogging web app.Any One can post post
+              their blog creating a account.Also User have
+              a profile. User can change their information.
+              In my bloging web app there is a Admin.Admin has
+              all authorization.Admin can delete, Edit, Create
+              all.
+            </p>
+
+          </div>
+        </div>
+
+
+
         <hr />
       </section>
+
+      <section>
+
+        <div style="text-align: center; font-size: 36px;">
+         <b>PICTURES</b> 
+        </div>
+
+        <div class="containerr" style="margin-left: 70px;">
+        
+          <div class="panel active"  >
+            <img class="panel active"  src="{%static 'image/2.jpg'%}" />
+            <h3>Explore The World</h3>
+            </div>
+            <div class="panel" >
+              <img class="panel"  src="{%static 'image/1.jpg'%}" />
+              <h3>Wild Forest</h3>
+            </div>
+            <div class="panel" >
+              <img class="panel"  src="{%static 'image/3.jpg'%}" />
+              <h3>Sunny Beach</h3>
+            </div>
+            <div class="panel">
+              <img class="panel"  src="{%static 'image/4.jpg'%}" />
+              <h3>City on Winter</h3>
+            </div>
+            <div class="panel" >
+              <img class="panel"  src="{%static 'image/5.jpg'%}" />
+              <h3>Mountains - Clouds</h3>
+            </div>
+      </div>
+      </section>
+
+
       <section id="contact" class="contact">
         <h1>Get In Touch</h1>
         <p>
@@ -371,6 +430,51 @@
         </div>
         <hr />
       </section>
+
+
+
+      <section>
+             <div>
+              <h1 style="text-align: center; font-size: 36px;">Contact Me</h1>
+
+             </div>
+
+             <div style="text-align: center; margin-top: 70px;">
+
+              <form method="post" >
+                {% csrf_token %}
+                {{ form|crispy}}
+                <div class="form-actions" style="margin-top: 15px;">
+                  <button type="submit" style="background-color: #4CAF50;
+                  border: none;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 4px 2px;
+                  cursor: pointer;">Send</button>
+                </div>
+                </form>
+
+            
+            </div>
+             
+               
+             
+
+              
+
+
+             </div>
+           
+
+            
+
+      </section>
+
+
       <footer>
         <div class="footer-nav">
           <a href="#landing-page" class="footer-nav-link">Home</a>
@@ -401,11 +505,12 @@
       </footer>
     </main>
     <script src="{%static 'js/main.js'%}"></script>
+    <script src="{% static 'js/base.js'%}"></script>
     <script
       src="../kit.fontawesome.com/836a943e18.js"
       crossorigin="anonymous"
     ></script>
   </body>
 
-<!-- Mirrored from chaoocharles.netlify.app/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jun 2020 21:22:04 GMT -->
+
 </html>
