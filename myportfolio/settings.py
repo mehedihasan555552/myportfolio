@@ -169,4 +169,4 @@ EMAIL_USE_TLS = True # new
 # EMAIL_USE_TLS = True
 # EMAIL_PORT = 587
 # EMAIL_HOST_USER = 'micelhussy0@gmail.com'
-# EMAIL_HOST_PASSWORD = 'Mehedi55555' 
+# EMAIL_HOST_PASSWORD = 'Mehedi55555'
