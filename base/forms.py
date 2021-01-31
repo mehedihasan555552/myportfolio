@@ -2,9 +2,9 @@ from django import forms
 
 
 class ContactForm(forms.Form):
-   
+
     phone  = forms.CharField(widget=forms.TextInput(attrs={'size':122,'class':'form-control'}))
-	
+
     email  = forms.EmailField(widget=forms.TextInput(attrs={'size':122,'class':'form-control'}))
 #     #subject = forms.CharField(required=True ,widget=forms.TextInput(attrs={'size':122,'class':'form-control',}))
     comment  = forms.CharField(widget=forms.Textarea(attrs={'rows':15, 'cols':110}))
