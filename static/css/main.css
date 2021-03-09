@@ -73,7 +73,7 @@ nav {
 }
 
 .nav-brand {
-  width: 7rem;
+  width: 8rem;
 }
 
 .line1 {
@@ -561,7 +561,7 @@ footer a {
     width: 20rem;
   }
 
- 
+
 }
 
 @media (max-width: 665px) {
@@ -611,4 +611,3 @@ footer a {
     font-size: 1.2rem;
   }
 }
-

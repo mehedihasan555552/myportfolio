@@ -143,38 +143,3 @@ STATICFILES_DIRS =[
 ]
 
 MEDIA_ROOT= os.path.join(BASE_DIR,'static/images')
-
-
-# #SMTP Configuration
-# EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
-# SENDGRID_API_KEY = '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'
-# SENDGRID_SANDBOX_MODE_IN_DEBUG=False
-
-
-#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
-
-# # config/settings.py
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
-# EMAIL_HOST = 'smtp.sendgrid.net' # new
-# DEFAULT_FROM_EMAIL = 'mehedihasan555552@gmail.com'
-# EMAIL_HOST_USER = 'apikey' # new
-# EMAIL_HOST_PASSWORD = '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' # new
-# EMAIL_PORT = 587 # new
-# EMAIL_USE_TLS = True # new
-
-
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_USE_TLS = True
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'micelhussy0@gmail.com'
-# EMAIL_HOST_PASSWORD = 'mehedi55555'
-
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-ACCOUNT_ACTIVATION_DAYS=7
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_USE_TLS=1
-EMAIL_PORT=587
-EMAIL_HOST_USER='micelhussy0@gmail.com'
-EMAIL_HOST_PASSWORD='mehedi55555'
