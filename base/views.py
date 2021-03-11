@@ -16,7 +16,8 @@ def Contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('index')
             messages.success(request,'Your Message Has been sent.')
+            return redirect('index')
+
     context = {'form':form}
     return render(request,'base/contact.html',context)

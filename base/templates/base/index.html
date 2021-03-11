@@ -26,8 +26,12 @@
     <style>
       .alert {
         padding: 20px;
-        background-color: green;
+        background-color: #32CD32;
         color: white;
+        font-size: 24px;
+        
+
+
       }
 
       .closebtn {
@@ -40,6 +44,8 @@
         cursor: pointer;
         transition: 0.3s;
       }
+
+
 
       .closebtn:hover {
         color: black;
@@ -243,6 +249,47 @@
           font-size: 2.5rem;
         }
 
+        .wrap{
+          text-align: center;
+
+        }
+        .clockh1{
+          font-size: 58px;
+          margin-bottom: 15px;
+        }
+        #clock span{
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          background-color: #3f58b5;
+          box-shadow: 0 5px 15px #3f58b5;
+          color:#fff;
+          margin: 0 15px;
+        }
+        #clock span:first-child{
+          margin-left: 0;
+        }
+        #clock span:last-child{
+          background-color: #e91e63;
+        }
+        #greeting{
+          background-color: #ff0057;
+          display: inline-block;
+          border-radius: 4px;
+          font-size: 42px;
+          padding: 20px 50px;
+          margin-bottom: 30px;
+          box-shadow: 0 5px 15px #bebebe;
+          animation: greeting 2s ease infinite 1s;
+          color:#fff;
+        }
+        @keyframes greeting {
+          30%{
+            opacity: 0;
+          }
+        }
+
 
       </style>
   </head>
@@ -328,7 +375,7 @@
 <ul class="messages">
     {% for message in messages %}
     <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> <div class="alert">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <span  class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
       <strong></strong> {{ message }}
     </div> </li>
     {% endfor %}
@@ -368,6 +415,10 @@
         </div>
       </section>
       <section id="about" class="about">
+        <div class="wrap">
+          <h1 class="clockh1" id='greeting'></h1>
+          <h1 class="clockh1" id='clock'></h1>
+        </div>
           <div class="gradient-border" id="box1">
         <div class="container">
 
@@ -927,6 +978,7 @@
     </main>
     <script src="{%static 'js/main.js'%}"></script>
     <script src="{% static 'js/base.js'%}"></script>
+    <script src="{% static 'js/clock.js'%}"></script>
     <script
       src="../kit.fontawesome.com/836a943e18.js"
       crossorigin="anonymous"
