@@ -15,7 +15,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: #e7e7e7;
-  background: linear-gradient(to right, #202020,#404040);
+  background: #0A192F;
 }
 
 a {
@@ -136,7 +136,7 @@ nav {
 .nav-list {
   width: 24rem;
   height: 100vh;
-  background-color: #222222;
+  background-color: #112240;
   position: fixed;
   top: 0;
   right: -26rem;
@@ -198,12 +198,8 @@ nav {
 .landing-page {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
-      135deg,
-      rgba(0, 124, 94, 0.9) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    ),
-    url("images/landing-page.png") center no-repeat;
+ 
+   
   background-size: contain;
   position: relative;
 }

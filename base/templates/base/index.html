@@ -181,7 +181,7 @@
 }
 .gradient-border {
   --borderWidth: 3px;
-  background: #1D1F20;
+  background: #112240;
   position: relative;
   border-radius: var(--borderWidth);
 }
@@ -291,9 +291,192 @@
         }
 
 
+
+
+
+
+
+       
+
+        .sidenav {
+          height: 100%;
+          width: 160px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #0A192F;
+          overflow-x: hidden;
+          padding-top: 20px;
+        }
+        
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+       
+  
+        @media all and (max-width: 768px){
+          #sidenav {
+            display: none;
+          }
+  
+          #sidenav1 {
+            display: block;
+          }
+  
+          }
+  
+          @media all and (min-width: 768px){
+            #sidenav {
+              display: block;
+            }
+  
+            #sidenav1 {
+              display: none;
+            }
+  
+            }
+
+
+
+
+
+            .sidenav-right {
+              height: 100%;
+              width: 160px;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 1450px;
+              background-color: #0A192F;
+              overflow-x: hidden;
+              padding-top: 20px;
+            }
+            
+            .sidenav-right a {
+              padding: 6px 8px 6px 16px;
+              text-decoration: none;
+              font-size: 25px;
+              color: #818181;
+              display: block;
+            }
+            
+            .sidenav-right a:hover {
+              color: #f1f1f1;
+            }
+            
+           
+      
+            @media all and (max-width: 768px){
+              #sidenav-right {
+                display: none;
+              }
+      
+              #sidenav1-right {
+                display: block;
+              }
+      
+              }
+      
+              @media all and (min-width: 768px){
+                #sidenav-right {
+                  display: block;
+                }
+      
+                #sidenav1-right {
+                  display: none;
+                }
+      
+                }
+
+      
+
+          
+
+
       </style>
   </head>
   <body>
+
+
+    
+    <div class="sidenav" id="sidenav" style="margin-top: 300px;;">
+     
+        <a  href="mailto:mehedihasan555552@gmail.com"
+          ><i class="fas fa-envelope-open"></i> </a
+        >
+      
+     
+        <a href="https://www.fiverr.com/mehedi555552" target="_blank">
+          <i class="fab fa-behance"></i></a
+        >
+      
+    
+        <a href="https://www.linkedin.com/in/mehedi-hasan-b402b4116/" target="_blank">
+          <i class="fab fa-linkedin"></i></a
+        >
+     
+      
+        <a href="https://github.com/mehedihasan555552" target="_blank">
+          <i class="fab fa-github"></i></a
+        >
+
+        <a href="https://twitter.com/ridoy123439" target="_blank">
+          <i class="fab fa-twitter"></i></a
+        >
+
+        <a href="https://www.facebook.com/mehedihasan555552/" target="_blank">
+          <i class="fab fa-facebook"></i></a
+        >
+       <hr style="transform:rotate(90deg);margin-right:110px;;height: 2px;">
+       <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
+       <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
+       <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
+      
+     
+    </div>
+
+    <div class="sidenav1" id="sidenav1">
+     
+     
+   
+  </div>
+
+
+  <div class="sidenav-right" id="sidenav-right" style="margin-top: 300px;;">
+     
+    <a  href="mailto:mehedihasan555552@gmail.com" style="transform:rotate(90deg);margin-right:110px;font-size:18px;"
+      > mehedihasan555552@gmail.com</a
+    >
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+ 
+   
+    
+   <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
+   <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
+   <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
+   <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
+  
+ 
+</div>
+
+<div class="sidenav1-right" id="sidenav1-right">
+ 
+ 
+
+</div>
+
+
     <header>
       <div class="container">
         <nav>
@@ -367,7 +550,11 @@
       </div>
     </header>
 
+
+
     <main>
+
+     
 
 
 
@@ -385,9 +572,13 @@
       <section id="landing-page" class="landing-page">
         <div class="container">
           <div class="main-message">
+            <p style="color: #5AE6C7;margin-right:150px;">Hello, my name is</p>
+            <br>
             <h1>Mehedi Hasan</h1>
-            <h3>{Python Django Full-Stack Web Developer}</h3>
-            <p>
+            <br>
+            <h2 style="color: #CCD6F6;font-size:42px;">{Python Django Full-Stack Web Developer}</h2>
+            <br>
+            <p style="color:#5AE6C7;">
               HTML . CSS . JavaScript . Python . Django . Rest Framework . Reactjs
             </p>
             <div class="intro-btn">
@@ -563,6 +754,9 @@
          <!-- MehediEco -->
 
 
+        
+
+
          <div class="gradient-border" id="box">
 
            <div class="project-item">
@@ -580,7 +774,7 @@
               </p>
 
             </div>
-            <div class="project-img">
+            <div class="project-img" style="margin-top: 40px;">
               <img src="{%static 'image/Eco.gif'%}" />
             </div>
           </div>
@@ -595,16 +789,11 @@
                <img src="{%static 'image/Eco.gif'%}" />
              </div>
             <div class="project-description has-margin-right">
-              <h1>MehediEco Ecomerce Web App</h1>
-              <p>
-                This is a <a href="http://mehedi-eco.herokuapp.com/" target="_blank">eComerce web App</a> with Paypal payment integration,
-                 I developed for educational purpose. User can buy product without
-                 creating account.
-
-                Users don't need to  register and login
-                for them to use the app.
-                 I developed this app using Html,CSS,JavaScript,Bootstarp,Pyhton,Django
-                 Here is <a href="http://mehedi-eco.herokuapp.com/" target="_blank">Live Webisite</a>
+              <h1>MehediEco Ecomerce
+                 Web App</h1>
+              
+               <p > 
+                This is an eCommerce web application with Paypal payment integration, I developed for educational purposes. Users can buy products without creating an account. Users don't need to register and log in for them to use the application. I developed this application using  Html, CSS, JavaScript, Bootstrap, Python, Django.Here is  Here is <a href="http://mehedi-eco.herokuapp.com/" target="_blank">Live Webisite</a>
               </p>
 
             </div>
@@ -627,7 +816,10 @@
           <div class="project-description">
             <h1>Seller Website Admin panel System</h1>
             <p>
-              This is a system for monitoring all things like buy sell and user update, user delete, price update etc. It have three levels of users Admin, Buyer,and the Website Coordinator. Each user have a specific role in the system. buyer have the lowest privilege. I developed this
+              This is a system for monitoring all things like buy sell and user update, 
+              user delete, price update etc. It have three levels of users Admin, Buyer,and 
+              the Website Coordinator. Each user have a specific role in the system. buyer 
+              have the lowest privilege. I developed this
               system using Django,CSS, Html
             </p>
 
@@ -642,13 +834,15 @@
        <div class="gradient-border" id="box">
 
         <div class="project-item">
-          <div class="project-img has-margin-right">
+          <div class="project-img has-margin-right" style="margin-top: 40px;">
             <img src="{%static 'image/adminpanel.gif'%}" />
           </div>
           <div class="project-description">
             <h1>Seller Website Admin panel System</h1>
             <p>
-              This is a system for monitoring all things like buy sell and user update, user delete, price update etc. It have three levels of users Admin, Buyer,and the Website Coordinator. Each user have a specific role in the system. buyer have the lowest privilege. I developed this
+              This is a system for monitoring all things like buy sell and user update, 
+              user delete, price update etc. It have three levels of users Admin, Buyer,and
+               the Website Coordinator. Each user have a specific role in the system. buyer have the lowest privilege. I developed this
               system using Django,CSS, Html
             </p>
 
@@ -674,7 +868,7 @@
             </p>
 
           </div>
-          <div class="project-img">
+          <div class="project-img" style="margin-top: 40px;">
             <img src="{%static 'image/todo.gif'%}" />
           </div>
         </div>
@@ -683,10 +877,15 @@
 
 
 
+
+
         <div id="borderDemo1">
 
           <div class="project-item">
-            <div class="project-description has-margin-right">
+            <div class="project-img has-margin-right">
+              <img src="{%static 'image/todo.gif'%}" />
+            </div>
+            <div class="project-description">
               <h1>To-do App</h1>
               <p>
                 This is a simple to-do app I developed for educational purpose.
@@ -695,13 +894,16 @@
                 removing tasks from the database. A user can  see the tasks that he/she
                 have added. I developed this app using django rest Framework, Reactjs
               </p>
+  
+  
+            </div>
+          </div>
+  
+          </div>
 
-            </div>
-            <div class="project-img">
-              <img src="{%static 'image/todo.gif'%}" />
-            </div>
-          </div>
-          </div>
+
+
+       
 
 
 
@@ -710,7 +912,7 @@
 
         <div class="gradient-border" id="box">
         <div class="project-item">
-          <div class="project-img has-margin-right">
+          <div class="project-img has-margin-right" style="margin-top: 40px;">
             <img src="{%static 'image/voting.gif'%}" />
           </div>
           <div class="project-description">
@@ -760,45 +962,39 @@
           <div class="project-description has-margin-right">
             <h1>Library Management System</h1>
             <p>
-              Library Management System is developed in Django,Html,Css,JavaScript
-               which mainly focuses on basic operations in a library like adding new books,
-               and updating new information, searching books and members and return books.
-                Purpose: System is mainly to provide automati...
-                Admin: He can read or write the information ab...
-                Operator: He can open the account of member...
-                Scope: The application is wide and can be used
+              Library Management System is developed in Django, Html, CSS, JavaScript which mainly focuses on basic operations in a library like adding new books, and updating new information, searching books and members, and return books.  Purpose: The system is mainly to provide automatic   Admin: He can read or write the information. Operator: He can open the account of a member. Scope: The application is wide and can be used
             </p>
 
           </div>
-          <div class="project-img">
+          <div class="project-img" style="margin-top: 40px;">
             <img src="{%static 'image/library.gif'%}" />
           </div>
         </div>
 
         </div>
 
+      
 
 
-      <div id="borderDemo1">
-        <div class="project-item">
-          <div class="project-description has-margin-right">
-            <h1>Library Management System</h1>
-            <p>
-              Library Management System is developed in Django,Html,Css,JavaScript
-               which mainly focuses on basic operations in a library like adding new books,
-               and updating new information, searching books and members and return books.
-                Purpose: System is mainly to provide automati...
-                Admin: He can read or write the information ab...
-                Operator: He can open the account of member...
-                Scope: The application is wide and can be used
-            </p>
+        <div id="borderDemo1">
+          <div class="project-item">
+            <div class="project-img has-margin-right">
+              <img src="{%static 'image/library.gif'%}" />
+            </div>
+            <div class="project-description">
+              <h1>Library Management System</h1>
+              <p>
+                Library Management System is developed in Django, Html, CSS, JavaScript which mainly focuses on basic operations in a library like adding new books, and updating new information, searching books and members, and return books.  Purpose: The system is mainly to provide automatic   Admin: He can read or write the information. Operator: He can open the account of a member. Scope: The application is wide and can be used
+              </p>
 
+            </div>
           </div>
-          <div class="project-img">
-            <img src="{%static 'image/library.gif'%}" />
-          </div>
-        </div>
+
       </div>
+
+
+
+
 
 
         <!-- Fifth service -->
@@ -807,7 +1003,7 @@
         <div class="gradient-border" id="box">
 
         <div class="project-item">
-          <div class="project-img has-margin-right">
+          <div class="project-img has-margin-right" style="margin-top: 40px;">
             <img src="{%static 'image/blog.gif'%}" />
           </div>
           <div class="project-description">
@@ -853,7 +1049,7 @@
         <hr />
       </section>
 
-      <section>
+      <!-- <section>
 
         <div style="text-align: center; font-size: 36px;">
          <b>PICTURES</b>
@@ -882,7 +1078,7 @@
               <h3>Mountains - Clouds (Chongqing-China)</h3>
             </div>
       </div>
-      </section>
+      </section> -->
 
 
       <section id="contact" class="contact">
@@ -904,26 +1100,26 @@
 
         </p>
         <div class="container">
-          <p>
-            <a href="mailto:mehedihasan555552@gmail.com"
+          <h2>
+            <a  href="mailto:mehedihasan555552@gmail.com"
               ><i class="fas fa-envelope-open"></i> mehedihasan555552@gmail.com</a
             >
-          </p>
-          <p>
+          </h2>
+          <h2>
             <a href="https://www.fiverr.com/mehedi555552" target="_blank">
               <i class="fa fa-fiverr"> Fiverr</i></a
             >
-          </p>
-          <p>
+          </h2>
+          <h2>
             <a href="https://www.linkedin.com/in/mehedi-hasan-b402b4116/" target="_blank">
               <i class="fab fa-linkedin"> Linkedin</i></a
             >
-          </p>
-          <p>
-            <a href="https://twitter.com/ridoy123439" target="_blank">
-              <i class="fab fa-twitter"> Twitter</i></a
+          </h2>
+          <h2>
+            <a href="https://github.com/mehedihasan555552" target="_blank">
+              <i class="fab fa-github"> GitHub</i></a
             >
-          </p>
+          </h2>
         </div>
 
     <div class="" style="text-align: center;">
