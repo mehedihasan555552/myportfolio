@@ -437,10 +437,12 @@ hr {
 
 .project-img {
   flex: 1;
+  
 }
 
 .project-description {
   flex: 1;
+  
 }
 
 .project-description h1 {
@@ -458,7 +460,11 @@ hr {
 .project-description p {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
+  
+  
 }
+
+
 
 .project-link {
   display: inline-block;
