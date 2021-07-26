@@ -40,13 +40,9 @@ INSTALLED_APPS = [
     'base',
     'crispy_forms',
 
-     'contactform',
-
-
 
 ]
 
-CONTACTFORM_RECIPIENTS = ['mehedihasan555552@gmail.com']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

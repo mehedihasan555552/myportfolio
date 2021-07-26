@@ -6,11 +6,6 @@ from . forms import *
 
 # Create your views here.
 def index(request):
-    return render(request,'base/index.html')
-
-
-
-def Contact(request):
     form = ContactForm()
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -20,4 +15,8 @@ def Contact(request):
             return redirect('index')
 
     context = {'form':form}
-    return render(request,'base/contact.html',context)
+    return render(request,'base/index.html',context)
+
+
+
+

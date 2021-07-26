@@ -398,12 +398,74 @@
       
                 }
 
-      
+    
 
-          
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 90%;
+  margin-left: 40px;
+  
+}     
 
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
 
-      </style>
+.form-control input:focus,
+.form-control input:valid{
+  outline: 0;
+}
+
+.btnn{
+  cursor: pointer;
+  display: inline-block;
+  width: 90%;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 40px;
+
+}
+
+.btnn:focus {
+  outline: 0;
+}
+
+.btnn:active{
+  transform: scale(0.98);
+}
+
+.form-control label{
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+</style>
   </head>
   <body>
 
@@ -780,14 +842,25 @@
                  I developed this app using Html,CSS,JavaScript,Bootstarp,Pyhton,Django
                  Here is <a href="http://mehedi-eco.herokuapp.com/" target="_blank">Live Webisite</a>
               </p>
+              
 
             </div>
+            <div style="margin: 5px;">
+              <a href="https://github.com/mehedihasan555552/EcomerceDjangoFullFun-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="http://mehedi-eco.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+
+            </div>
+          
 
             </div>
             <div class="project-img" style="margin-top: 40px;border: 3px solid #63FDD9;">
               <img src="{%static 'image/Eco.gif'%}" />
             </div>
+           
           </div>
+          
+
+          
 
          </div>
 
@@ -805,6 +878,11 @@
                <p > 
                 This is an eCommerce web application with Paypal payment integration, I developed for educational purposes. Users can buy products without creating an account. Users don't need to register and log in for them to use the application. I developed this application using  Html, CSS, JavaScript, Bootstrap, Python, Django.Here is  Here is <a href="http://mehedi-eco.herokuapp.com/" target="_blank">Live Webisite</a>
               </p>
+
+            </div>
+            <div style="margin: 5px;">
+              <a href="https://github.com/mehedihasan555552/EcomerceDjangoFullFun-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="http://mehedi-eco.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
 
             </div>
 
@@ -825,7 +903,7 @@
           </div>
           <div class="project-description">
         
-            <h1>Seller Website Admin panel System</h1>
+            <h1>Seller Website Admin panel </h1>
             <p>
               This is a system for monitoring all things like buy sell and user update, 
               user delete, price update etc. It have three levels of users Admin, Buyer,and 
@@ -835,6 +913,11 @@
             </p>
 
          
+          </div>
+          <div style="margin: 5px;">
+            <a href="https://github.com/mehedihasan555552/Seller-Website-Admin-Panel-System" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+
           </div>
         </div>
 
@@ -857,13 +940,18 @@
             padding: 0px;
             padding-bottom:10px;
             ">
-            <h1 style="padding: 5px;">Seller Website Admin panel System</h1>
+            <h1 style="padding: 5px;">Seller Website Admin panel</h1>
             <p style="padding: 5px;">
               This is a system for monitoring all things like buy sell and user update, 
               user delete, price update etc. It have three levels of users Admin, Buyer,and
                the Website Coordinator. Each user have a specific role in the system. buyer have the lowest privilege. I developed this
               system using Django,CSS, Html
             </p>
+            </div>
+            <div style="margin: 5px;margin-left:320px;">
+              <a href="https://github.com/mehedihasan555552/Seller-Website-Admin-Panel-System" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+
             </div>
 
           </div>
@@ -893,6 +981,11 @@
               removing tasks from the database. A user can  see the tasks that he/she
               have added. I developed this app using django rest Framework, Reactjs
             </p>
+
+            </div>
+            <div style="margin: 5px;">
+              <a href="https://github.com/mehedihasan555552/EcomerceDjangoFullFun-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="http://mehedi-eco.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
 
             </div>
 
@@ -925,6 +1018,11 @@
               </p>
   
   
+            </div>
+            <div style="margin: 5px;">
+              <a href="https://github.com/mehedihasan555552/Todo-Djagno-ReactJs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+
             </div>
           </div>
   
@@ -962,6 +1060,11 @@
             </p>
 
             </div>
+            <div style="margin: 5px;margin-left:320px;">
+              <a href="https://github.com/mehedihasan555552/Todo-Djagno-ReactJs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+
+            </div>
 
           </div>
         </div>
@@ -983,6 +1086,11 @@
                   see results.Only Admin can create poll Question.
                 </p>
 
+              </div>
+              <div style="margin: 5px;">
+                <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+  
               </div>
             </div>
 
@@ -1009,8 +1117,13 @@
             ">
             <h1>Library Management System</h1>
             <p >
-              Library Management System is developed in Django, Html, CSS, JavaScript which mainly focuses on basic operations in a library like adding new books, and updating new information, searching books and members, and return books.  Purpose: The system is mainly to provide automatic   Admin: He can read or write the information. Operator: He can open the account of a member. Scope: The application is wide and can be used
+              Library Management System is developed in Django, Html, CSS, JavaScript which mainly focuses on basic operations in a library like adding new books, and updating new information, searching books and members, and return books.  Purpose: The system is mainly to provide automatic   Admin: He can read or write the information. 
             </p>
+
+            </div>
+            <div style="margin: 5px;">
+              <a href="https://github.com/mehedihasan555552/Library-management-system-SWPU-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
 
             </div>
 
@@ -1035,6 +1148,11 @@
               <p>
                 Library Management System is developed in Django, Html, CSS, JavaScript which mainly focuses on basic operations in a library like adding new books, and updating new information, searching books and members, and return books.  Purpose: The system is mainly to provide automatic   Admin: He can read or write the information. Operator: He can open the account of a member. Scope: The application is wide and can be used
               </p>
+
+            </div>
+            <div style="margin: 5px;">
+              <a href="https://github.com/mehedihasan555552/Library-management-system-SWPU-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
 
             </div>
           </div>
@@ -1075,6 +1193,11 @@
             </p>
 
             </div>
+            <div style="margin: 5px; margin-left:320px;">
+              <a href="https://github.com/mehedihasan555552/Djagno-Blog-Website-2019" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+
+            </div>
 
           </div>
         </div>
@@ -1101,6 +1224,11 @@
               </p>
 
             </div>
+            <div style="margin: 5px;">
+              <a href="https://github.com/mehedihasan555552/Djagno-Blog-Website-2019" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+
+            </div>
           </div>
 
         </div>
@@ -1108,36 +1236,7 @@
         <hr />
       </section>
 
-      <!-- <section>
-
-        <div style="text-align: center; font-size: 36px;">
-         <b>PICTURES</b>
-        </div>
-
-        <div class="containerr" style="margin-left: 70px;">
-
-          <div class="panel active"  >
-            <img class="panel active"  src="{%static 'image/2.jpg'%}" />
-            <h3>Enjoying the view </h3>
-            </div>
-            <div class="panel" >
-              <img class="panel"  src="{%static 'image/1.jpg'%}" />
-              <h3>Riding bike </h3>
-            </div>
-            <div class="panel" >
-              <img class="panel"  src="{%static 'image/3.jpg'%}" />
-              <h3>CloseUp Smile</h3>
-            </div>
-            <div class="panel">
-              <img class="panel"  src="{%static 'image/4.jpg'%}" />
-              <h3>Favourite Place Rupnagar</h3>
-            </div>
-            <div class="panel" >
-              <img class="panel"  src="{%static 'image/5.jpg'%}" />
-              <h3>Mountains - Clouds (Chongqing-China)</h3>
-            </div>
-      </div>
-      </section> -->
+      
 
 
       <section id="contact" class="contact">
@@ -1180,19 +1279,41 @@
             >
           </h2>
         </div>
+    
 
-    <div class="" style="text-align: center;">
-    <a href="{% url 'contact' %}"><h1 style="text-align: center; font-size: 36px;background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;"">Send Message</h1></a>
-    </div>
+         <h1><u>Contact me</u></h1>
+    
+
+      <div>
+        <form action="" method="post">
+          {% csrf_token %}
+
+          <div class="form-control" >
+            <input type="text" id="{{form.name.auto_id}}"  name="{{form.name.html_name}}" required>
+            <label>Name</label>
+          </div>
+
+          <div class="form-control">
+            <input type="email" id="{{form.email.auto_id}}"  name="{{form.email.html_name}}" required>
+            <label>Email</label>
+          </div>
+
+          <div class="form-control">
+            <input type="text" id="{{form.message.auto_id}}"  name="{{form.message.html_name}}"  required>
+            <label>Message</label>
+          </div>
+
+          <button type="submit" class="btnn">Send Message</button>
+
+        </form>
+      </div>
+     
+     
+     
+
+     
+
+     
 
 
           <hr />
@@ -1238,6 +1359,20 @@
       src="../kit.fontawesome.com/836a943e18.js"
       crossorigin="anonymous"
     ></script>
+
+
+    <script>
+      const labels = document.querySelectorAll('.form-control label')
+
+    labels.forEach(label => {
+    label.innerHTML = label.innerText
+        .split('')
+        .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+        .join('')
+        })
+
+
+    </script>
   </body>
 
 
