@@ -1,0 +1,80 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Django - Full Stack Python django web developer</title>
+    <meta name="description" content="Django - Full Stack Python django web developer.IAM Mehedi Hasan Full Stack python djagno expert.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{%static 'css/contact.css'%}" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="{% static 'image/favicon.ico'%}">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+
+  </head>
+  <body>
+
+<div class="container">
+	<div class="row">
+			<h1>contact me</h1>
+	</div>
+
+
+
+  <div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+
+	<div class="row input-container">
+    <form action="" method="post">
+				{% csrf_token %}
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" id="{{form.name.auto_id}}"  name="{{form.name.html_name}}"  required />
+
+          <label>Name</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" id="{{form.email.auto_id}}"  name="{{form.email.html_name}}" required />
+
+          <label>Email</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" id="{{form.phone.auto_id}}"  name="{{form.phone.html_name}}" required />
+
+          <label>Phone Number</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" id="{{form.message.auto_id}}"  name="{{form.message.html_name}}" required />
+          <label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+        <button class="btn-lrg submit-btn" type="submit">Send Message</button>
+
+			</div>
+      </form>
+	</div>
+</div>
+
+
+</body>
+
+
+</html>
