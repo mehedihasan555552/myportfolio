@@ -20,6 +20,20 @@
    
 }
 
+.project-img1{
+    height: 32px;
+    width: 32px;
+    
+   
+}
+
+.togglebtn{
+   margin: 2px;
+   background: local;
+   border-radius: 25%;
+   
+    
+}
 .project-card {
     flex: 1;
     display: flex;
@@ -74,6 +88,13 @@
     .project-info {
         margin-left: 0px;
         margin-top: 12px;
+    }
+
+    .project-img1{
+        height: 24px;
+        width: 24px;
+    
+       
     }
     
 }

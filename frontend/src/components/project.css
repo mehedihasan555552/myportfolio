@@ -6,7 +6,7 @@
 }
 
 .project-img{
-    width: 40%;
+   width: 40%;
 }
 
 .project-card {
@@ -52,9 +52,10 @@
     font-weight: 700;
 }
 
-.project-links {
+.project-link {
     margin-top: 6px;
     display: flex;
+    
 }
 
 .link-button{
@@ -90,3 +91,6 @@
         max-width: 100%;
     }
 }
+
+
+
