@@ -10,7 +10,7 @@ function Skill() {
           <div className='skills-container'>
               <div className='skills-section'>
                  <label className='skills-section-title'>Frontend</label>
-                 <div className='skills-list'>
+                 <div className='skills-list' data-aos="flip-left">
                     
 
                      <div className='skill-card'>
@@ -58,7 +58,7 @@ function Skill() {
 
               <div className='skills-section'>
                  <label className='skills-section-title'>Backend</label>
-                 <div className='skills-list'>
+                 <div className='skills-list' data-aos="flip-right">
                      <div className='skill-card'>
                          <div className='skill-icon'>
                          <i class="devicon-python-plain-wordmark colored"></i>
@@ -82,7 +82,7 @@ function Skill() {
 
               <div className='skills-section'>
                  <label className='skills-section-title'>Cloud Platform</label>
-                 <div className='skills-list'>
+                 <div className='skills-list' data-aos="flip-left">
                      <div className='skill-card'>
                          <div className='skill-icon'>
                          <i class="devicon-heroku-plain-wordmark colored"></i>

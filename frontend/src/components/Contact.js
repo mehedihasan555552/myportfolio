@@ -11,13 +11,13 @@ function Contact() {
            <Separator/> 
            <label className='contact-title'>Contact</label>
            <div className='contact-container'>
-               <div className='contact-left'>
+               <div className='contact-left' data-aos="fade-up"  data-aos-delay="300">
                    <p>Want to get in touch? Contact me </p>
                    <Social/>
 
                </div>
 
-               <div className='download'>
+               <div className='download' data-aos="fade-up"  data-aos-delay="300">
                    <a href={require("../picture/MehediResume.pdf").default}>
                    <i class='fi-rr-cloud-download download-icon'></i>
                    Download Resume

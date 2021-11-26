@@ -4,10 +4,10 @@ import './aboutme.css'
 function AboutMe() {
     return (
         <div className='aboutme'>
-            <div className='aboutme-left'>
+            <div className='aboutme-left' data-aos="zoom-in-left">
              <img src={require("../picture/about-pic.jpg").default} className='aboutme-img'/>
             </div>
-            <div className='aboutme-right'>
+            <div className='aboutme-right' data-aos="flip-right">
             <h2>Hello 👋🏽</h2>
               <p>
                 I'm Mehedi Hasan,I am a software engineer working on web applications and web infrastructure.

@@ -10,14 +10,14 @@ function Work() {
            <div>
                 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info' data-aos="zoom-in-down"  data-aos-delay="300">
                         <label className='project-title'> Fiverr</label>
                         <div className='project-links'>
                             <div>
                             <h2>Rating</h2>
 
                             </div>
-
+ 
 
                             <div>
                             <img src={require("../picture/star.png").default} className='star'/>
@@ -40,13 +40,13 @@ function Work() {
                         
 
                     </div>
-                    <img src={require("../picture/rating1.PNG").default} className='project-img'/>
+                    <img src={require("../picture/rating1.PNG").default} className='project-img' data-aos="zoom-in-left"  data-aos-delay="300"/>
 
                 </div>
 
 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info' data-aos="zoom-in-left"  data-aos-delay="300">
                         <label className='project-title'> Fiverr</label>
                         <div className='project-links'>
                             <div>
@@ -74,12 +74,12 @@ function Work() {
                         
 
                     </div>
-                    <img src={require("../picture/rating2.PNG").default} className='project-img'/>
+                    <img src={require("../picture/rating2.PNG").default} className='project-img' data-aos="zoom-in-right"  data-aos-delay="300"/>
 
                 </div>
 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info'  data-aos="flip-left"  data-aos-delay="300">
                         <label className='project-title'> Freelancer</label>
                         <div className='project-links'>
                             <div>
@@ -108,7 +108,7 @@ function Work() {
                         
 
                     </div>
-                    <img src={require("../picture/rating3.PNG").default} className='project-img'/>
+                    <img src={require("../picture/rating3.PNG").default} className='project-img' data-aos="flip-right"  data-aos-delay="300"/>
 
                 </div>
 

@@ -6,7 +6,7 @@ function About() {
     return (
         <div className='about'>
             <div className='about-top'>
-                <div className='about-info'>
+                <div className='about-info' data-aos="fade-up-right">
                     <p>Hello, I'M 
                     <br/>
                         <span className='info-name'>MEHEDI HASAN</span>
@@ -20,7 +20,7 @@ function About() {
 
             </div>
 
-            <div className='about-bottom'>
+            <div className='about-bottom' data-aos="fade-up">
                <Social/>
             </div>
             

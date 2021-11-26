@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className='footer'>
 
-        Made with 💙 by MEHEDI HASAN &copy; 2021
+            <h4>Made with 💙 by MEHEDI HASAN &copy; 2021</h4>
          
             
         </div>

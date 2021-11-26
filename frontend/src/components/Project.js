@@ -10,7 +10,7 @@ function Project() {
             <div>
                 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info' data-aos="fade-down-right">
                         <label className='project-title'> MehediEco Ecomerce Web App</label>
                         <div className='project-links'>
                             <a href='http://mehedi-eco.herokuapp.com/' target="_blank" className='project-link'>
@@ -44,13 +44,13 @@ function Project() {
                         
 
                     </div>
-                    <img src={require("../picture/Eco.gif").default} className='project-img'/>
+                    <img src={require("../picture/Eco.gif").default} className='project-img' data-aos="fade-down-left"/>
 
                 </div>
 
 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info' data-aos="flip-left">
                         <label className='project-title'> Seller Website Admin panel</label>
                         <div className='project-links'>
                             <a href='#' target="_blank" className='project-link'>
@@ -84,14 +84,14 @@ function Project() {
                         
 
                     </div>
-                    <img src={require("../picture/adminpanel.gif").default} className='project-img'/>
+                    <img src={require("../picture/adminpanel.gif").default} className='project-img' data-aos="flip-right"/>
 
                 </div>
 
 
 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info' data-aos="fade-down-right">
                         <label className='project-title'> To-do App</label>
                         <div className='project-links'>
                             <a href='#' target="_blank" className='project-link'>
@@ -122,13 +122,13 @@ function Project() {
                         
 
                     </div>
-                    <img src={require("../picture/todo.gif").default} className='project-img'/>
+                    <img src={require("../picture/todo.gif").default} className='project-img' data-aos="fade-down-left"/>
 
                 </div>
 
 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info' data-aos="flip-left">
                         <label className='project-title'> Voting System</label>
                         <div className='project-links'>
                             <a href='#' target="_blank" className='project-link'>
@@ -162,13 +162,13 @@ function Project() {
                         
 
                     </div>
-                    <img src={require("../picture/voting.gif").default} className='project-img'/>
+                    <img src={require("../picture/voting.gif").default} className='project-img' data-aos="flip-right"/>
 
                 </div>
 
 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info'  data-aos="fade-left">
                         <label className='project-title'> Library Management System</label>
                         <div className='project-links'>
                             <a href='#' target="_blank" className='project-link'>
@@ -203,13 +203,13 @@ function Project() {
                         
 
                     </div>
-                    <img src={require("../picture/library.gif").default} className='project-img'/>
+                    <img src={require("../picture/library.gif").default} className='project-img'  data-aos="fade-right"/>
 
                 </div>
 
 
                 <div className='project-card'>
-                    <div className='project-info'>
+                    <div className='project-info' data-aos="flip-left">
                         <label className='project-title'> Bloging App</label>
                         <div className='project-links'>
                             <a href='#' target="_blank" className='project-link'>
@@ -245,7 +245,7 @@ function Project() {
                         
 
                     </div>
-                    <img src={require("../picture/blog.gif").default} className='project-img'/>
+                    <img src={require("../picture/blog.gif").default} className='project-img' data-aos="flip-right"/>
 
                 </div>
 
