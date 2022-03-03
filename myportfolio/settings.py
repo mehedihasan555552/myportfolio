@@ -37,10 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'base',
-    'rest_framework',
-    'corsheaders',
-
+    'base',
+   
 
 ]
 
@@ -67,7 +65,7 @@ ROOT_URLCONF = 'myportfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'frontend/build')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -93,7 +91,7 @@ DATABASES = {
     }
 }
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -139,8 +137,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
 STATICFILES_DIRS =[
-   os.path.join(BASE_DIR,'static'),
-   os.path.join(BASE_DIR,'frontend/build/static')
+   os.path.join(BASE_DIR,'static')
 ]
 
 MEDIA_ROOT= os.path.join(BASE_DIR,'static/images')

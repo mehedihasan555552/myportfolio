@@ -1,1379 +1,287 @@
 {% load static %}
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang=en dir=ltr>
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Django - Full Stack Python django web developer</title>
-    <meta name="description" content="Django - Full Stack Python django web developer.IAM Mehedi Hasan Full Stack python djagno expert.">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{%static 'css/main.css'%}" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{%static 'css/slide.css'%}" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="shortcut icon" href="{% static 'image/favicon.ico'%}">
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
-
-
-    <style>
-      .alert {
-        padding: 20px;
-        background-color: #32CD32;
-        color: white;
-        font-size: 24px;
-        
-
-
-      }
-
-      .closebtn {
-        margin-left: 15px;
-        color: white;
-        font-weight: bold;
-        float: right;
-        font-size: 22px;
-        line-height: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-
-
-
-      .closebtn:hover {
-        color: black;
-      }
-
-      .skills{
-        max-width:60%;
-        margin: 150px auto 0;
-      }
-      .bar{
-        color: #fff;
-        letter-spacing: 1px;
-        font-weight: 500;
-        font-size:16px;
-        position:relative;
-      }
-      .bar{
-        display: inline-block;
-        margin-bottom:15px;
-        width: 100%;
-      }
-      .bar span{
-        position:relative;
-        display: inline-block;
-        width: 100%;
-        height: 25px;
-        background: #000;
-        border-radius: 50px;
-      }
-
-      .bar span:before{
-        position:absolute;
-        content: '';
-        top:6px;
-        left:6px;
-        width:80%;
-        height:50%;
-        background:linear-gradient(to left,#ff0057,#ffeb3b);
-        border-radius: 50px;
-        animation: bar 4s ease;
-      }
-      @keyframes bar {
-        from{
-          width: 0;
-        }
-      }
-      .bar:nth-child(1) span:before{
-        width: 95%;
-      }
-      .bar:nth-child(2) span:before{
-        width: 90%;
-      }
-      .bar:nth-child(3) span:before{
-        width: 80%;
-      }
-      .bar:nth-child(4) span:before{
-        width: 80%;
-      }
-      .bar:nth-child(5) span:before{
-        width: 70%;
-      }
-
-      abbr{
-        width:50px;
-        display: inline-block;
-        height:35px;
-        border-radius:50px;
-        text-align:center;
-        line-height:35px;
-        position: absolute;
-        top:16px;
-        z-index:1;
-        background:linear-gradient(to left,#ff0057,#ffeb3b);
-        box-shadow: 0 5px 20px #ff0057,0 5px 20px #ffeb3b;
-        animation: count 4s ease;
-      }
-      @keyframes count {
-        from{
-          left:0%;
-        }
-      }
-      .bar:nth-child(1) abbr{
-        left:95%;
-      }
-      .bar:nth-child(2) abbr{
-        left:90%;
-      }
-      .bar:nth-child(3) abbr{
-        left:80%;
-      }
-      .bar:nth-child(4) abbr{
-        left:80%;
-      }
-      .bar:nth-child(5) abbr{
-        left:70%;
-      }
-
-
-
-      .myButton {
-      	box-shadow: 0px 1px 0px 0px #fff6af;
-      	background-color:#ffec64;
-      	border-radius:6px;
-      	border:1px solid #ffaa22;
-      	display:inline-block;
-      	cursor:pointer;
-      	color:#333333;
-      	font-family:Arial;
-      	font-size:16px;
-      	font-weight:bold;
-      	padding:12px 24px;
-      	text-decoration:none;
-      	text-shadow:0px 1px 0px #ffee66;
-      }
-      .myButton:hover {
-      	background-color:#000;
-        color:#fff;
-      }
-      .myButton:active {
-      	position:relative;
-      	top:1px;
-      }
-
-
-
-
-  #box {
-
-  width: 900px;
-  height: 400px;
-  color: white;
-  font-size: 2.5rem;
-}
-.gradient-border {
-  --borderWidth: 3px;
-  background: #112240;
-  position: relative;
-  border-radius: var(--borderWidth);
-}
-.gradient-border:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
-}
-
-
-@keyframes animatedgradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-      @media all and (max-width: 768px){
-        #box {
-          display: none;
-        }
-
-        #borderDemo1 {
-          display: block;
-        }
-
-        }
-
-        @media all and (min-width: 768px){
-          #box {
-            display: block;
-          }
-
-          #borderDemo1 {
-            display: none;
-          }
-
-          }
-
-
-          .titleborder {
-
-            padding: 10px;
-            border: 2px solid #ff0057;
-          }
-
-
-          #box1 {
-
-
-          color: white;
-          font-size: 2.5rem;
-        }
-
-        .wrap{
-          text-align: center;
-
-        }
-        .clockh1{
-          font-size: 58px;
-          margin-bottom: 15px;
-        }
-        #clock span{
-          display: inline-block;
-          width: 100px;
-          height: 100px;
-          line-height: 100px;
-          background-color: #3f58b5;
-          box-shadow: 0 5px 15px #3f58b5;
-          color:#fff;
-          margin: 0 15px;
-        }
-        #clock span:first-child{
-          margin-left: 0;
-        }
-        #clock span:last-child{
-          background-color: #e91e63;
-        }
-        #greeting{
-          background-color: #ff0057;
-          display: inline-block;
-          border-radius: 4px;
-          font-size: 42px;
-          padding: 20px 50px;
-          margin-bottom: 30px;
-          box-shadow: 0 5px 15px #bebebe;
-          animation: greeting 2s ease infinite 1s;
-          color:#fff;
-        }
-        @keyframes greeting {
-          30%{
-            opacity: 0;
-          }
-        }
-
-
-
-
-
-
-
-       
-
-        .sidenav {
-          height: 100%;
-          width: 160px;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: #0A192F;
-          overflow-x: hidden;
-          padding-top: 20px;
-        }
-        
-        .sidenav a {
-          padding: 6px 8px 6px 16px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #818181;
-          display: block;
-        }
-        
-        .sidenav a:hover {
-          color: #f1f1f1;
-        }
-        
-       
-  
-        @media all and (max-width: 768px){
-          #sidenav {
-            display: none;
-          }
-  
-          #sidenav1 {
-            display: block;
-          }
-  
-          }
-  
-          @media all and (min-width: 768px){
-            #sidenav {
-              display: block;
-            }
-  
-            #sidenav1 {
-              display: none;
-            }
-  
-            }
-
-
-
-
-
-            .sidenav-right {
-              height: 100%;
-              width: 160px;
-              position: fixed;
-              z-index: 1;
-              top: 0;
-              left: 1450px;
-              background-color: #0A192F;
-              overflow-x: hidden;
-              padding-top: 20px;
-            }
-            
-            .sidenav-right a {
-              padding: 6px 8px 6px 16px;
-              text-decoration: none;
-              font-size: 25px;
-              color: #818181;
-              display: block;
-            }
-            
-            .sidenav-right a:hover {
-              color: #f1f1f1;
-            }
-            
-           
-      
-            @media all and (max-width: 768px){
-              #sidenav-right {
-                display: none;
-              }
-      
-              #sidenav1-right {
-                display: block;
-              }
-      
-              }
-      
-              @media all and (min-width: 768px){
-                #sidenav-right {
-                  display: block;
-                }
-      
-                #sidenav1-right {
-                  display: none;
-                }
-      
-                }
-
-    
-
-.form-control {
-  position: relative;
-  margin: 20px 0 40px;
-  width: 90%;
-  margin-left: 40px;
-  
-}     
-
-.form-control input {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 2px solid #fff;
-  display: block;
-  width: 100%;
-  padding: 15px 0;
-  font-size: 18px;
-  color: #fff;
-}
-
-.form-control input:focus,
-.form-control input:valid{
-  outline: 0;
-}
-
-.btnn{
-  cursor: pointer;
-  display: inline-block;
-  width: 90%;
-  background: lightblue;
-  padding: 15px;
-  font-family: inherit;
-  font-size: 16px;
-  border: 0;
-  border-radius: 5px;
-  margin-left: 40px;
-
-}
-
-.btnn:focus {
-  outline: 0;
-}
-
-.btnn:active{
-  transform: scale(0.98);
-}
-
-.form-control label{
-  position: absolute;
-  top: 15px;
-  left: 0;
-}
-
-.form-control label span {
-  display: inline-block;
-  font-size: 18px;
-  min-width: 5px;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.form-control input:focus + label span,
-.form-control input:valid + label span {
-  color: lightblue;
-  transform: translateY(-30px);
-}
-
-</style>
-  </head>
-  <body>
-
-
-    
-    <div class="sidenav" id="sidenav" style="margin-top: 300px;;">
-     
-        <a  href="mailto:mehedihasan555552@gmail.com"
-          ><i class="fas fa-envelope-open"></i> </a
-        >
-      
-     
-        <a href="https://www.fiverr.com/mehedi555552" target="_blank">
-          <i class="fab fa-behance"></i></a
-        >
-      
-    
-        <a href="https://www.linkedin.com/in/mehedi-hasan-b402b4116/" target="_blank">
-          <i class="fab fa-linkedin"></i></a
-        >
-     
-      
-        <a href="https://github.com/mehedihasan555552" target="_blank">
-          <i class="fab fa-github"></i></a
-        >
-
-        <a href="https://twitter.com/ridoy123439" target="_blank">
-          <i class="fab fa-twitter"></i></a
-        >
-
-        <a href="https://www.facebook.com/mehedihasan555552/" target="_blank">
-          <i class="fab fa-facebook"></i></a
-        >
-       <hr style="transform:rotate(90deg);margin-right:110px;;height: 2px;">
-       <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
-       <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
-       <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
-      
-     
-    </div>
-
-    <div class="sidenav1" id="sidenav1">
-     
-     
-   
-  </div>
-
-
-  <div class="sidenav-right" id="sidenav-right" style="margin-top: 300px;;">
-     
-    <a  href="mailto:mehedihasan555552@gmail.com" style="transform:rotate(90deg);margin-right:110px;font-size:18px;"
-      > mehedihasan555552@gmail.com</a
-    >
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  
- 
-   
-    
-   <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
-   <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
-   <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
-   <hr style="transform:rotate(90deg);margin-right:110px;height: 2px;">
-  
- 
-</div>
-
-<div class="sidenav1-right" id="sidenav1-right">
- 
- 
-
-</div>
-
-
-    <header>
-      <div class="container">
-        <nav>
-          <div class="nav-brand">
-            <a href="#">
-              <img src="{%static 'image/logo.png'%}" alt="Django"  />
-            </a>
-          </div>
-          <div class="burger-menu-icon">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#landing-page">
-                <img
-                  src="{%static 'image/profile-pic.jpg'%}"
-                  alt="Django"
-                  class="profile-pic nav-link"
-                />
-                <span class="caption nav-link">Mehedi Hasan</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="#"
-                target="_blank"
-                class="nav-link"
-                >Videos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item social-icons">
-              <a
-                href="#"
-                target="_blank"
-                class="nav-link"
-              >
-                <i class="fab fa-youtube"></i
-              ></a>
-              <a
-                href="#"
-                target="_blank"
-                class="nav-link"
-              >
-                <i class="fab fa-dev"></i
-              ></a>
-              <a
-                href="https://twitter.com/ridoy123439"
-                target="_blank"
-                class="nav-link"
-              >
-                <i class="fab fa-twitter"></i
-              ></a>
-            </li>
-
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-
-
-    <main>
-
-     
-
-
-
-      {% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> <div class="alert">
-      <span  class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-      <strong></strong> {{ message }}
-    </div> </li>
-    {% endfor %}
-</ul>
-{% endif %}
-
-      <section id="landing-page" class="landing-page">
-        <div class="container">
-          <div class="main-message">
-            <p style="color: #5AE6C7;margin-right:150px;">Hello, my name is</p>
-            <br>
-            <h1>Mehedi Hasan</h1>
-            <br>
-            <h2 style="color: #CCD6F6;font-size:42px;">{Python Django Full-Stack Web Developer}</h2>
-            <br>
-            <p style="color:#5AE6C7;">
-              HTML . CSS . JavaScript . Python . Django . Rest Framework . Reactjs
-            </p>
-            <div class="intro-btn">
-              <div class="cta">
-                <a href="#contact" class="btn">Get In Touch</a>
-              </div>
-              <div class="cta">
-                <a
-                href="https://drive.google.com/file/d/1srTES5NNwE9fDKlAfYwgVlmHyj6AJSmw/view?usp=sharing"
-                target="_blank"
-
-                  class="btn"
-                  >CV</a
-                >
-              </div>
-            </div>
-            <div>
-              <a href="#about" class="scroll-down">
-                <span class="material-icons">
-                  expand_more
-                </span></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="about" class="about">
-        <div class="wrap">
-          <h1 class="clockh1" id='greeting'></h1>
-          <h1 class="clockh1" id='clock'></h1>
-        </div>
-          <div class="gradient-border" id="box1">
-        <div class="container">
-
-          <div class="about-img">
-            <img
-              src="{%static 'image/about-pic.jpg'%}"
-              alt="Django"
-              class="about-pic"
-            />
-          </div>
-
-          <div class="about-text-box">
-
-              <h2>Hello 👋🏽</h2>
-              <p>
-                I'm Mehedi Hasan,I am a software engineer working on web applications and web infrastructure.
-                I have been developing professionally for 2 years but tinkering since a kid.
-                I started in tech with internships, freelance services and part time positons during college.
-                <strong>I'm Python Django Full-Stack Web Developer </strong> 💻 with a strong
-                educational background in Software Engineering. I am doing
-                freelance work 🚀 <strong> in Fiverr and Frelancer </strong>, but I do
-                work remotely for international clients.
-              </p>
-              <p>
-                I started creating  web app using<strong> Django,Reactjs, HTML and CSS</strong> back in
-                2018. <strong>I'm a Python Django Expert</strong> and extremely
-                passionate about coding. I love to learn new things every day and
-                keep up with the new technologies. In many ways, websites are my
-                first love 💙
-              </p>
-              <p>
-                A day in my life may consist of: prepping web art, fixing some front-end bugs,
-                adding an API endpoint, dockerizing an application, database design, configuring a unit or ui test library,
-                setting up a build or deployment plan, provisioning a test tier machine or feature work when I am lucky.
-
-
-              </p>
-
-
-
-
-          </div>
-        </div>
-        </div>
-
-
-         <hr />
-      </section>
-      <section id="services" class="services">
-        <div class="container">
-          <div class="title-heading">
-            <h1>SKILLS</h1>
-            <p>
-              I will help you to create a remarkable first impression with
-              Web app.
-            </p>
-          </div>
-
-
-          <div class="skills">
-            <div class="bar">
-              <h3>PYTHON/DJANGO <abbr>95%</abbr></h3>
-              <span></span>
-            </div>
-
-            <div class="bar">
-              <h3>HTML/CSS<abbr>90%</abbr></h3>
-              <span></span>
-            </div>
-
-            <div class="bar">
-              <h3>REST FRAMEWORK<abbr>80%</abbr></h3>
-              <span></span>
-            </div>
-
-            <div class="bar">
-              <h3>REACTJS<abbr>80%</abbr></h3>
-              <span></span>
-            </div>
-
-            <div class="bar">
-              <h3>JAVASCRIPT<abbr>70%</abbr></h3>
-              <span></span>
-            </div>
-
-          </div>
-
-          <br><br>
-          <div class="service-tiers">
-            <!-- First service -->
-            <div class="tier-item web-development">
-              <span class="material-icons">
-                code
-              </span>
-              <h1>Web Development</h1>
-              <p>
-                HTML, CSS (Bootstrap), JavaScript , Python, Django
-               I can deploy your web app on Heroku,DigitalOcean,
-               pythonanywhere etc
-              </p>
-            </div>
-
-            <!-- Second service -->
-            <div class="tier-item responsive-design">
-              <span class="material-icons">
-                devices
-              </span>
-              <h1>Responsive Design</h1>
-              <p>
-                In 2020 you can't go online without having a mobile responsive
-                website. Let me take care of that for you!
-              </p>
-            </div>
-
-            <!-- Third service -->
-            <div class="tier-item psd-html">
-              <span class="material-icons">
-                developer_mode
-              </span>
-              <h1>PSD to HTML</h1>
-              <p>
-                If you already have a design in Photoshop, Invision or any other
-                format, I can convert it from scratch into pixel-perfect
-                HTML/CSS/JS website.
-              </p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </section>
-      <section id="projects" class="projects">
-        <div class="container">
-          <div class="title-heading">
-            <h1>Projects</h1>
-            <p>
-              These are some of my recent projects
-            </p>
-          </div>
-        </div>
-
-
-         <!-- MehediEco -->
-
-
-        
-
-
-         <div class="gradient-border" id="box">
-
-           <div class="project-item">
-            <div class="project-description has-margin-right">
-              <div class="project-text" style="background: #0A192F;z-index: 2; border-radius:25px;display: flex;
-              flex-wrap: wrap;
-              position: relative;
-              z-index: 2;
-              margin: 25px 0 0px;
-              padding: 0px;
-              padding-bottom:10px;
-              ">
-              <h1 style="padding: 5px;">MehediEco Ecomerce Web App</h1>
-              <p style="padding: 5px;">
-                This is a <a href="http://mehedi-eco.herokuapp.com/" target="_blank">eComerce web App</a> with Paypal payment integration,
-                 I developed for educational purpose. User can buy product without
-                 creating account.
-
-                Users don't need to  register and login
-                for them to use the app.
-                 I developed this app using Html,CSS,JavaScript,Bootstarp,Pyhton,Django
-                 Here is <a href="http://mehedi-eco.herokuapp.com/" target="_blank">Live Webisite</a>
-              </p>
-              
-
-            </div>
-            <div style="margin: 5px;">
-              <a href="https://github.com/mehedihasan555552/EcomerceDjangoFullFun-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="http://mehedi-eco.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-          
-
-            </div>
-            <div class="project-img" style="margin-top: 40px;border: 3px solid #63FDD9;">
-              <img src="{%static 'image/Eco.gif'%}" />
-            </div>
-           
-          </div>
-          
-
-          
-
-         </div>
-
-
-         <div id="borderDemo1">
-
-           <div  class="project-item">
-             <div class="project-img">
-               <img src="{%static 'image/Eco.gif'%}" />
-             </div>
-            <div class="project-description has-margin-right">
-              <h1>MehediEco Ecomerce
-                 Web App</h1>
-              
-               <p > 
-                This is an eCommerce web application with Paypal payment integration, I developed for educational purposes. Users can buy products without creating an account. Users don't need to register and log in for them to use the application. I developed this application using  Html, CSS, JavaScript, Bootstrap, Python, Django.Here is  Here is <a href="http://mehedi-eco.herokuapp.com/" target="_blank">Live Webisite</a>
-              </p>
-
-            </div>
-            <div style="margin: 5px;">
-              <a href="https://github.com/mehedihasan555552/EcomerceDjangoFullFun-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="http://mehedi-eco.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-
-          </div>
-
-         </div>
-
-
-
-
-
-        <!-- First project -->
-      <div id="borderDemo1">
-
-        <div class="project-item">
-          <div class="project-img has-margin-right">
-            <img src="{%static 'image/adminpanel.gif'%}" />
-          </div>
-          <div class="project-description">
-        
-            <h1>Seller Website Admin panel </h1>
-            <p>
-              This is a system for monitoring all things like buy sell and user update, 
-              user delete, price update etc. It have three levels of users Admin, Buyer,and 
-              the Website Coordinator. Each user have a specific role in the system. buyer 
-              have the lowest privilege. I developed this
-              system using Django,CSS, Html
-            </p>
-
-         
-          </div>
-          <div style="margin: 5px;">
-            <a href="https://github.com/mehedihasan555552/Seller-Website-Admin-Panel-System" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-          </div>
-        </div>
-
-        </div>
-
-
-       <br>
-       <div class="gradient-border" id="box">
-
-        <div class="project-item">
-          <div class="project-img has-margin-right" style="margin-top: 40px;border: 3px solid #63FDD9;">
-            <img src="{%static 'image/adminpanel.gif'%}" />
-          </div>
-          <div class="project-description">
-            <div class="project-text" style="background: #0A192F;z-index: 2; border-radius:25px;display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 2;
-            margin: 25px 0 0px;
-            padding: 0px;
-            padding-bottom:10px;
-            ">
-            <h1 style="padding: 5px;">Seller Website Admin panel</h1>
-            <p style="padding: 5px;">
-              This is a system for monitoring all things like buy sell and user update, 
-              user delete, price update etc. It have three levels of users Admin, Buyer,and
-               the Website Coordinator. Each user have a specific role in the system. buyer have the lowest privilege. I developed this
-              system using Django,CSS, Html
-            </p>
-            </div>
-            <div style="margin: 5px;margin-left:320px;">
-              <a href="https://github.com/mehedihasan555552/Seller-Website-Admin-Panel-System" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-
-          </div>
-        </div>
-
-        </div>
-
-        <!-- Second service -->
-        <br>
-
-        <div class="gradient-border" id="box">
-        <div class="project-item">
-          <div class="project-description has-margin-right">
-            <div class="project-text" style="background: #0A192F;z-index: 2; border-radius:25px;display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 2;
-            margin: 25px 0 0px;
-            padding: 0px;
-            padding-bottom:10px;
-            ">
-            <h1 style="padding: 5px;">To-do App</h1>
-            <p style="padding: 5px;">
-              This is a simple to-do app I developed for educational purpose.
-
-              It allows the user to perform CRUD operations e.g adding and
-              removing tasks from the database. A user can  see the tasks that he/she
-              have added. I developed this app using django rest Framework, Reactjs
-            </p>
-
-            </div>
-            <div style="margin: 5px;">
-              <a href="https://github.com/mehedihasan555552/EcomerceDjangoFullFun-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="http://mehedi-eco.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-
-          </div>
-          <div class="project-img" style="margin-top: 40px;border: 3px solid #63FDD9;">
-            <img src="{%static 'image/todo.gif'%}" />
-          </div>
-        </div>
-
-        </div>
-
-
-
-
-
-        <div id="borderDemo1">
-
-          <div class="project-item">
-            <div class="project-img has-margin-right">
-              <img src="{%static 'image/todo.gif'%}" />
-            </div>
-            <div class="project-description">
-              <h1>To-do App</h1>
-              <p>
-                This is a simple to-do app I developed for educational purpose.
-
-                It allows the user to perform CRUD operations e.g adding and
-                removing tasks from the database. A user can  see the tasks that he/she
-                have added. I developed this app using django rest Framework, Reactjs
-              </p>
-  
-  
-            </div>
-            <div style="margin: 5px;">
-              <a href="https://github.com/mehedihasan555552/Todo-Djagno-ReactJs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-          </div>
-  
-          </div>
-
-
-
-       
-
-
-
-        <!-- Third service -->
-        <br>
-
-        <div class="gradient-border" id="box">
-        <div class="project-item">
-          <div class="project-img has-margin-right" style="margin-top: 40px;border: 3px solid #63FDD9;">
-            <img src="{%static 'image/voting.gif'%}" />
-          </div>
-          <div class="project-description">
-            <div class="project-text" style="background: #0A192F;z-index: 2; border-radius:25px;display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 2;
-            margin: 25px 0 0px;
-            padding: 0px;
-            padding-bottom:10px;
-            ">
-            <h1 style="padding: 5px;">Voting System</h1>
-            <p style="padding: 5px;">
-              This is a simple Poll voting system web app.
-               which performs the most common
-              arithmetic operations. User can give a vote and
-              see results.Only Admin can create poll Question.
-            </p>
-
-            </div>
-            <div style="margin: 5px;margin-left:320px;">
-              <a href="https://github.com/mehedihasan555552/Todo-Djagno-ReactJs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-
-          </div>
-        </div>
-
-        </div>
-
-
-          <div id="borderDemo1">
-            <div class="project-item">
-              <div class="project-img has-margin-right">
-                <img src="{%static 'image/voting.gif'%}" />
-              </div>
-              <div class="project-description">
-                <h1>Voting System</h1>
-                <p>
-                  This is a simple Poll voting system web app.
-                   which performs the most common
-                  arithmetic operations. User can give a vote and
-                  see results.Only Admin can create poll Question.
-                </p>
-
-              </div>
-              <div style="margin: 5px;">
-                <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-  
-              </div>
-            </div>
-
-        </div>
-
-
-
-
-
-        <!-- Forth -->
-
-        <br>
-        <div class="gradient-border" id="box">
-
-        <div class="project-item">
-          <div class="project-description has-margin-right">
-            <div class="project-text" style="background: #0A192F;z-index: 2; border-radius:25px;display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 2;
-            margin: 25px 0 0px;
-            padding: 0px;
-            padding-bottom:10px;
-            ">
-            <h1>Library Management System</h1>
-            <p >
-              Library Management System is developed in Django, Html, CSS, JavaScript which mainly focuses on basic operations in a library like adding new books, and updating new information, searching books and members, and return books.  Purpose: The system is mainly to provide automatic   Admin: He can read or write the information. 
-            </p>
-
-            </div>
-            <div style="margin: 5px;">
-              <a href="https://github.com/mehedihasan555552/Library-management-system-SWPU-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-
-          </div>
-          <div class="project-img" style="margin-top: 40px; border: 3px solid #63FDD9; ">
-            <img src="{%static 'image/library.gif'%}" />
-          </div>
-        </div>
-
-        </div>
-
-      
-
-
-        <div id="borderDemo1">
-          <div class="project-item">
-            <div class="project-img has-margin-right">
-              <img src="{%static 'image/library.gif'%}" />
-            </div>
-            <div class="project-description">
-              <h1>Library Management System</h1>
-              <p>
-                Library Management System is developed in Django, Html, CSS, JavaScript which mainly focuses on basic operations in a library like adding new books, and updating new information, searching books and members, and return books.  Purpose: The system is mainly to provide automatic   Admin: He can read or write the information. Operator: He can open the account of a member. Scope: The application is wide and can be used
-              </p>
-
-            </div>
-            <div style="margin: 5px;">
-              <a href="https://github.com/mehedihasan555552/Library-management-system-SWPU-2020" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-          </div>
-
-      </div>
-
-
-
-
-
-
-        <!-- Fifth service -->
-
-        <br>
-        <div class="gradient-border" id="box">
-
-        <div class="project-item">
-          <div class="project-img has-margin-right" style="margin-top: 40px; border: 3px solid #63FDD9;">
-            <img src="{%static 'image/blog.gif'%}" />
-          </div>
-          <div class="project-description">
-            <div class="project-text" style="background: #0A192F;z-index: 2; border-radius:25px;display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 2;
-            margin: 25px 0 0px;
-            padding: 0px;
-            padding-bottom:10px;
-            ">
-            <h1  style="padding: 5px;">Bloging App</h1>
-            <p  style="padding: 5px;">
-              This is a Blogging web app.Any One can post post
-              their blog creating a account.Also User have
-              a profile. User can change their information.
-              In my bloging web app there is a Admin.Admin has
-              all authorization.Admin can delete, Edit, Create
-              all.
-            </p>
-
-            </div>
-            <div style="margin: 5px; margin-left:320px;">
-              <a href="https://github.com/mehedihasan555552/Djagno-Blog-Website-2019" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-
-          </div>
-        </div>
-
-        </div>
-
-
-
-        <div id="borderDemo1">
-
-          <div class="project-item">
-            <div class="project-img has-margin-right">
-              <img src="{%static 'image/blog.gif'%}" />
-            </div>
-            <div class="project-description">
-              <h1>Bloging App</h1>
-              <p>
-                This is a Blogging web app.Any One can post post
-                their blog creating a account.Also User have
-                a profile. User can change their information.
-                In my bloging web app there is a Admin.Admin has
-                all authorization.Admin can delete, Edit, Create
-                all.
-              </p>
-
-            </div>
-            <div style="margin: 5px;">
-              <a href="https://github.com/mehedihasan555552/Djagno-Blog-Website-2019" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-
-            </div>
-          </div>
-
-        </div>
-
-        <hr />
-      </section>
-
-      
-
-
-      <section id="contact" class="contact">
-        <h1>Get In Touch</h1>
-        <p>
-          I'd love if you reached out to me. Even if it's just to say "Hey!".
-          Don't hesitate! Drop me a line and I’ll get back to you ASAP!
-        </p>
-        <p>
-          <i
-            >Here is my
-            <strong><a href="https://www.fiverr.com/mehedi555552">"Gig"</a></strong></i
-          >
-          <div class="" style="text-align: center;">
-            <a href="https://www.fiverr.com/mehedi555552" target="_blank"  class="myButton">Hire me</a>
-          </div>
-
-
-
-        </p>
-        <div class="container">
-          <h2>
-            <a  href="mailto:mehedihasan555552@gmail.com"
-              ><i class="fas fa-envelope-open"></i> mehedihasan555552@gmail.com</a
-            >
-          </h2>
-          <h2>
-            <a href="https://www.fiverr.com/mehedi555552" target="_blank">
-              <i class="fa fa-fiverr"> Fiverr</i></a
-            >
-          </h2>
-          <h2>
-            <a href="https://www.linkedin.com/in/mehedi-hasan-b402b4116/" target="_blank">
-              <i class="fab fa-linkedin"> Linkedin</i></a
-            >
-          </h2>
-          <h2>
-            <a href="https://github.com/mehedihasan555552" target="_blank">
-              <i class="fab fa-github"> GitHub</i></a
-            >
-          </h2>
-        </div>
-    
-
-         <h1><u>Contact me</u></h1>
-    
-
-      <div>
-        <form action="" method="post">
-          {% csrf_token %}
-
-          <div class="form-control" >
-            <input type="text" id="{{form.name.auto_id}}"  name="{{form.name.html_name}}" required>
-            <label>Name</label>
-          </div>
-
-          <div class="form-control">
-            <input type="email" id="{{form.email.auto_id}}"  name="{{form.email.html_name}}" required>
-            <label>Email</label>
-          </div>
-
-          <div class="form-control">
-            <input type="text" id="{{form.message.auto_id}}"  name="{{form.message.html_name}}"  required>
-            <label>Message</label>
-          </div>
-
-          <button type="submit" class="btnn">Send Message</button>
-
-        </form>
-      </div>
-     
-     
-     
-
-     
-
-     
-
-
-          <hr />
-      </section>
-
-
-
-
-
-      <footer>
-        <div class="footer-nav">
-          <a href="#landing-page" class="footer-nav-link">Home</a>
-          <a href="#about" class="footer-nav-link">About</a>
-          <a href="#services" class="footer-nav-link">Services</a>
-          <a href="#projects" class="footer-nav-link">Projects</a>
-          <a href="#contact" class="footer-nav-link">Contact</a>
-        </div>
-        <div class="footer-coded-by">
-          <p>
-            <i class="fas fa-code"></i> with 💙 by MEHEDI HASAN &copy; 2020
-          </p>
-          <p>
-            Built with pure HTML, CSS and JavaScript
-          </p>
-        </div>
-        <div class="footer-social">
-          <a href="#" target="_blank">
-            <i class="fab fa-youtube"></i
-          ></a>
-          <a href="#" target="_blank">
-            <i class="fab fa-dev"></i
-          ></a>
-          <a href="#" target="_blank">
-            <i class="fab fa-twitter"></i
-          ></a>
-        </div>
-      </footer>
-    </main>
-    <script src="{%static 'js/main.js'%}"></script>
-    <script src="{% static 'js/base.js'%}"></script>
-    <script src="{% static 'js/clock.js'%}"></script>
-    <script
-      src="../kit.fontawesome.com/836a943e18.js"
-      crossorigin="anonymous"
-    ></script>
-
-
-    <script>
-      const labels = document.querySelectorAll('.form-control label')
-
-    labels.forEach(label => {
-    label.innerHTML = label.innerText
-        .split('')
-        .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
-        .join('')
-        })
-
-
-    </script>
-  </body>
+	<meta charset=utf-8 />
+	<meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1" />
+	<meta name=description content="Professional product designer and frontend developer based in Lagos, Nigeria" />
+	<meta name=keywords content="HTML, CSS, JavaScript, Figma, Product Design, User interface, user experience" />
+	<meta name=author content="Oluwakemi Adeleke" />
+	<link rel="shortcut icon" type=image/svg href="{% static 'image/logo.png' %}" />
+	<title>Django | Full Stack Python django web developer</title>
+	<link href="{% static 'main.css' %}" rel="stylesheet">
+</head>
+
+<body data-spy=scroll data-target=.navbar data-offset=200>
+	<header class=header-section id=home>
+		<nav class="navbar navbar-expand-md px-0 main-nav sticky nav-index" data-sticky-wrap=true data-sticky-class=stuck>
+			<div class="container px-4">
+				<a class=navbar-brand href=#home> <img src="{% static 'image/logo.png' %}" width="175px;" alt="" /> </a>
+				<button class="navbar-toggler open-nav" type=button aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+					<div class=toggle-menu-wrapper>
+						<div class=toggle-menu>
+							<div class="line line1"></div>
+							<div class="line line2"></div>
+							<div class="line line3"></div>
+						</div>
+					</div>
+				</button>
+				<div class="collapse navbar-collapse" id=navbarSupportedContent>
+					<ul class="navbar-nav ml-md-auto">
+						<li class=nav-item> <a class=nav-link href=#home>Home <span class=sr-only>(current)</span></a> </li>
+						<li class=nav-item> <a class=nav-link href=#about>About</a> </li>
+						<li class=nav-item> <a class=nav-link href=#services>Services</a> </li>
+						<li class=nav-item> <a class=nav-link href=#portfolio>Portfolio</a> </li>
+						<li class=nav-item> <a class=nav-link href=#contact>Contact Me</a> </li>
+						<li class=nav-item> <a class="nav-link case-studies" href=casestudies.html>Case Studies</a> </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class=container>
+			<div class=hero-wrapper>
+				<div class=hero-text-wrapper>
+					<p class=hi> Hi There <img src="{% static 'image/emoji.svg' %}" alt="" /> I'm </p>
+					<h1>MEHEDI HASAN</h1>
+					<h3>Full-Stack Python Django Web developer <img src="" alt="" style=margin-left:.2rem /></h3>
+					<p class=info> I’m a professional Full-Stack Python developer with front-end and back-end development skills. </p>
+					<a href=#contact> <span>Hire Me</span> </a>
+				</div>
+				<div class=hero-image-wrapper> <img src="{% static 'image/hero.png' %}" alt=hero-image /> </div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="about-section container" id=about>
+			<div class=image-div data-aos=fade-right> <img src="{% static 'image/2.jpg' %}" alt="Mehedi's Photo" loading=lazy /> </div>
+			<div class=about-text-div>
+				<div class="header about-header">
+					<div class=inner>
+						<div data-aos=fade-up> <span>Who I am</span> <span class=line></span> </div>
+						<h3 data-aos=fade-up>About Me</h3> </div>
+				</div>
+				<div class=text>
+					<p data-aos=fade-up> I'm Mehedi Hasan,I am a software engineer working on web applications and web infrastructure.
+						I have been developing professionally for 2 years but tinkering since a kid.
+						I started in tech with internships, freelance services and part time positons during college.
+						<strong>I'm Python Django Full-Stack Web Developer </strong> 💻 with a strong
+						educational background in Software Engineering. I am doing
+						freelance work 🚀 <strong> in Fiverr and Frelancer </strong>, but I do
+						work remotely for international clients.</p>
+					<p data-aos=fade-up>  I started creating  web app using<strong> Django,Reactjs, HTML and CSS</strong> back in
+						2018. <strong>I'm a Python Django Expert</strong> and extremely
+						passionate about coding. I love to learn new things every day and
+						keep up with the new technologies. In many ways, websites are my
+						first love 💙</p>
+					<p data-aos=fade-up>  A day in my life may consist of: prepping web art, fixing some front-end bugs,
+						adding an API endpoint, dockerizing an application, database design, configuring a unit or ui test library,
+						setting up a build or deployment plan, provisioning a test tier machine or feature work when I am lucky. </p>
+				</div>
+				<a href="{% static 'image/MehediResume.pdf' %}" data-aos=fade-up> <span>Download CV</span> </a>
+			</div>
+		</section>
+		<section class="services-section container" id=services>
+			<div class="header services-header">
+				<div class=inner>
+					<div data-aos=fade-up> <span>What I do</span> <span class=line></span> </div>
+					<h3 data-aos=fade-up>My Services</h3> </div>
+			</div>
+			<div class=services-card-wrapper>
+				<div class="services-card interface" data-aos=fade-up data-aos-delay=200>
+					<div> <img src="{% static 'image/react-logo.svg' %}" alt="" /> </div>
+					<h5>Responsive Design</h5>
+					<p> In 2022 you can't go online without having a mobile responsive
+						website. Let me take care of that for you! </p>
+				</div>
+				<div class="services-card development" data-aos=fade-up data-aos-delay=400>
+					<div> <img src="{% static 'image/brackets.svg' %}" alt="" /> </div>
+					<h5>Website Development</h5>
+					<p>  HTML, CSS (Bootstrap), JavaScript , Python, Django
+						I can deploy your web app on Heroku,DigitalOcean,
+						pythonanywhere etc </p>
+				</div>
+				<div class="services-card marketing" data-aos=fade-up data-aos-delay=600>
+					<div> <img src="{% static 'image/digital-marketing.svg' %}" alt="" /> </div>
+					<h5>PSD to HTML</h5>
+					<p> If you already have a design in Photoshop, Invision or any other
+						format, I can convert it from scratch into pixel-perfect
+						HTML/CSS/JS website. </p>
+				</div>
+			</div>
+		</section>
+		<section class="workflow-section container">
+			<div class="header workflow-header">
+				<div class=inner>
+					<div data-aos=fade-up> <span>Work Flow</span> <span class=line></span> </div>
+					<h3 data-aos=fade-up>My Work Process</h3> </div>
+			</div>
+			<div class=cards-wrapper>
+				<div class="card idea" data-aos=zoom-in data-aos-delay=200> <img src="{% static 'image/work-idea.svg' %}" alt="" />
+					<h6>Discover</h6>
+					<p>I conduct user research to identify the problem I want to solve.</p>
+				</div>
+				<div class="card plan" data-aos=zoom-in data-aos-delay=400> <img src="{% static 'image/work-plan.svg' %}" alt="" />
+					<h6>Define</h6>
+					<p>I brainstorm possible design solutions to the identified problem.</p>
+				</div>
+				<div class="card sketch" data-aos=zoom-in data-aos-delay=600> <img src="{% static 'image/work-sketch.svg' %}" alt="" />
+					<h6>Ideate</h6>
+					<p>I create wireframes and sketches of the product I’m about to design.</p>
+				</div>
+				<div class="card design" data-aos=zoom-in data-aos-delay=800> <img src="{% static 'image/work-design.svg' %}" alt="" />
+					<h6>Prototype</h6>
+					<p>I create high fidelity design and prototype the screens.</p>
+				</div>
+				<div class="card design" data-aos=zoom-in data-aos-delay=1000> <img src="{% static 'image/implement.svg' %}" alt="" />
+					<h6>Implement</h6>
+					<p>After designing, I deliver for implementation.</p>
+				</div>
+			</div>
+		</section>
+		<section class="portfolio-section container" id=portfolio>
+			<div class="header portfolio-header">
+				<div class=inner>
+					<div data-aos=fade-up> <span>My Project</span> <span class=line></span> </div>
+					<h3 data-aos=fade-up>My Portfolio</h3> </div>
+			</div>
+			<div class=flex-container data-aos=fade>
+				<div class="profile-container port-container-1">
+					<div class=profile-wrapper>
+						<div class=profile-card>
+							<h4>Tadio Mobile App</h4>
+							<p>A cryptocurrency mobile app which allows users buy and sell bitcoins, Etherum, Coinbase and Gift cards. Users can also recharge their mobile numbers from the app directly. </p> <a  target="_blank" href=https://github.com/mehedihasan555552>View Github</a> </div>
+					</div>
+				</div>
+				<div class="profile-container port-container-2">
+					<div class=profile-wrapper>
+						<div class=profile-card>
+							<h4>ITB Agency Website</h4>
+							<p> ITB media agency is a company into corporate communications and business development. The website was designed to increase the company’s conversion rate of customers. </p> <a target="_blank" href=https://github.com/mehedihasan555552>View Github</a> </div>
+					</div>
+				</div>
+				<div class="profile-container port-container-3">
+					<div class=profile-wrapper>
+						<div class=profile-card>
+							<h4>DesignPal Mobile App</h4>
+							<p> DesignPal is an AR mobile app which assists users to scan their new apartment and suggest various interior decorations and styles suitable for that particular apartment. </p> <a target="_blank" href=https://github.com/mehedihasan555552>View Github</a> </div>
+					</div>
+				</div>
+				<div class="profile-container port-container-4">
+					<div class=profile-wrapper>
+						<div class=profile-card>
+							<h4>Afigo Website</h4>
+							<p> Afigo website is a platform that shows tourists great places in Nigeria. The website was designed with quite a number of features that serves its purpose as a travel agency. </p> <a target="_blank" href=https://github.com/mehedihasan555552>View Github</a> </div>
+					</div>
+				</div>
+				<div class="profile-container port-container-5">
+					<div class=profile-wrapper>
+						<div class=profile-card>
+							<h4>Pixelshub Mobile App</h4>
+							<p> PixelsHub is a mobile app which connects professional photographers and creative artists to their potential clients globally. </p> <a target="_blank" href=https://github.com/mehedihasan555552>View Github</a> </div>
+					</div>
+				</div>
+				<div class="profile-container port-container-6">
+					<div class=profile-wrapper>
+						<div class=profile-card>
+							<h4>Tuteria Website</h4>
+							<p> Tuteria Limited is a company which offers both onine and offline tutoring services to people. The landing page was designed to increase customer’s conversion rate and improve usability. </p> <a target="_blank" href=https://github.com/mehedihasan555552>View Github</a> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact-section container" id=contact>
+			<div class="header contact-header">
+				<div class=inner>
+					<div data-aos=fade-up> <span>Contact Me</span> <span class=line></span> </div>
+					<h3 data-aos=fade-up>Get In Touch</h3> </div>
+			</div>
+			<div class=contact-header-text data-aos=fade-up>
+				<p>I am available to work on your projects and bring your ideas to life. I am just a click away.</p>
+			</div>
+			<div class=contact-flex>
+				<div class=left-icons>
+					<div class=contact-info data-aos=fade-up>
+						<div class=contact-image-div> <img src="{% static 'image/contact-address.svg' %}" alt="" /> </div>
+						<p>Savar,Dhaka Bangladesh</p>
+					</div>
+					<div class=contact-info data-aos=fade-up>
+						<div class=contact-image-div> <img src="{% static 'image/contact-email.svg' %}" alt="" /> </div> <a href=mailto:mehedihasan555552@gmail.com>mehedihasan555552@gmail.com</a> </div>
+					<div class=contact-info data-aos=fade-up>
+						<div class=contact-image-div> <img src="{% static 'image/contact-phone.svg' %}" alt="" /> </div> <a href=tel:+8801521333362>+8801521333362</a> </div>
+				</div>
+				<form class='contact-form' data-aos='fade-up'  method='POST'>
+					{% csrf_token %}
+					<input type='hidden' name='form-name' value='' />
+					<p class=hidden style=visibility:hidden;height:0>
+						<label>Don’t fill this out if you're human:
+							<input name=bot-field />
+						</label>
+					</p>
+					<input type=text placeholder="Full Name" name=name required/>
+					<div>
+						<input type=email placeholder=Email name=email required/>
+						<input type=number placeholder="Phone Number" name=phone-number required/> </div>
+					<textarea name=message id="" cols=30 rows=10 placeholder="Enter your message" required></textarea>
+					<button type=submit>Submit</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class=container>
+			<div> <img src="{% static 'image/logo.png' %}" width="175px" alt="" /> </div>
+			<div>
+				<p>&copy; Copyright 2022. All right reserved</p>
+			</div>
+			<div>
+				<a href="https://twitter.com/ridoy123439" target=_blank> <img src="{% static 'image/twitter.svg' %}" alt="link to twitter account" /> </a>
+				<a href="https://www.linkedin.com/in/mehedi-hasan-b402b4116/" target=_blank> <img src="{% static 'image/linkedin.svg' %}" alt="link to linkedin account" /> </a>
+				<a href="https://www.fiverr.com/mehedi555552" target=_blank> <img src="{% static 'image/behance.svg' %}" alt="link to fiverr account" /> </a>
+				<a href="https://api.whatsapp.com/send?phone=8801521333362&text=Hello" target=_blank> <img src="{% static 'image/whatsapp.svg' %}" alt="link to whatsapp" /> </a>
+			</div>
+		</div>
+	</footer>
+	<div class=page-designs>
+		<div class=grills> <img src="{% static 'image/side-element.svg' %}" alt="" class=element-1 /> <img src="{% static 'image/side-element.svg' %}" alt="" class=element-2 /> <img src="{% static 'image/side-element.svg' %}" alt="" class=element-3 /> <img src="{% static 'image/side-element.svg' %}" alt="" class=element-4 /> </div>
+		<div class=page-overlay>
+			<div class="layer layer-1"></div>
+			<div class="layer layer-2"></div>
+			<div class="layer layer-3"></div>
+		</div>
+		<div class=random-moving-divs>
+			<div class=a></div>
+			<div class=b></div>
+			<div class=c></div>
+			<div class=e></div>
+			<div class=f></div>
+			<div class=g></div>
+			<div class=i></div>
+			<div class=j></div>
+			<div class=k></div>
+		</div>
+	</div>
+	<div class=mobile-nav>
+		<div class=container>
+			<nav class=nav-bar>
+				<ul class=nav-list>
+					<li class="nav-list-item mobile-link"> <a href=#home class=nav-link>Home</a> </li>
+					<li class="nav-list-item mobile-link"> <a href=#about class=nav-link>About</a> </li>
+					<li class="nav-list-item mobile-link"> <a href=#services class=nav-link>Services</a> </li>
+					<li class="nav-list-item mobile-link"> <a href=#portfolio class=nav-link>Portfolio</a> </li>
+					<li class="nav-list-item mobile-link"> <a href=#contact class=nav-link>Contact Me</a> </li>
+					<li class="nav-list-item mobile-link case-studies"> <a class="nav-link case-studies" href=casestudies.html>Case Studies</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<script src=../cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/easypiechart.min.js></script>
+	<script type="text/javascript" src="{% static 'main.js' %}"></script>
+</body>
 
 
 </html>
